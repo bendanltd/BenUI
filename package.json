@@ -1,5 +1,5 @@
 {
-  "name": "BenUI",
+  "name": "benui",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -26,6 +26,7 @@
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "typescript": "^3.0.0",
+    "vue-cli-plugin-iview": "^1.0.6",
     "vue-template-compiler": "^2.5.17"
   }
 }
