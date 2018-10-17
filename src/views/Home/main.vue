@@ -1,20 +1,39 @@
 <template>
     <div class="main">
-        <Layout>
-            <div class="header">
-                <Row>
-                    <Col span="12"></Col>
-                    <Col span="12"></Col>
+        <div class="header">
+            <Row class="site-center main-maxwidth">
+                <Col :xs="24" :sm="18" :md="18" :lg="18">
+                <div style="float:left">
+                  <div>BenUI</div>
+                <div>你好</div>
+                </div>
+                </Col>
+                <Col :xs="0" :sm="6" :md="6" :lg="6">
+                <div style="float:right;">
+                     <Button type="info" ghost size="small">登录</Button>
+                     <Button type="warning" ghost style="margin-left:2px;" size="small">注册</Button>
+                </div>
+                </Col>
+            </Row>
+        </div>
+        <div class="main-context">
+            <div class="site-center main-maxwidth">
+                <Row class="site-center main-maxwidth">
+                    <Col :xs="24" :sm="18" :md="18" :lg="18">
+                    <div class="content">
+                        aaaaa
+                    </div>
+                    </Col>
+                    <Col :xs="0" :sm="6" :md="6" :lg="6">
+                    <div class="sider">
+                        aaaaa
+                    </div>
+                    </Col>
                 </Row>
             </div>
-            <div class="site-content" style="width: 1140px;">
-                <Layout>
-                    <Content>Content</Content>
-                    <Sider style="height:500px">Sider</Sider>
-                </Layout>
-            </div>
-            <Footer style="background:red">Footer</Footer>
-        </Layout>
+        </div>
+       <div class="footer">
+        </div>
     </div>
 </template>
 
