@@ -1,10 +1,20 @@
 <template>
     <div class="main">
-      <Row>
-        <Col :xs="2" :sm="4" :md="6" :lg="8"><div></div></Col>
-        <Col :xs="20" :sm="16" :md="12" :lg="8"><div></div></Col>
-        <Col :xs="2" :sm="4" :md="6" :lg="8"><div></div></Col>
-    </Row>
+        <Layout>
+            <div class="header">
+                <Row>
+                    <Col span="12"></Col>
+                    <Col span="12"></Col>
+                </Row>
+            </div>
+            <div class="site-content" style="width: 1140px;">
+                <Layout>
+                    <Content>Content</Content>
+                    <Sider style="height:500px">Sider</Sider>
+                </Layout>
+            </div>
+            <Footer style="background:red">Footer</Footer>
+        </Layout>
     </div>
 </template>
 
